@@ -10,5 +10,5 @@ Momentum FGI is a cryptocurrency forecasting project that compares Naive, ARIMA,
 - `data/` – input datasets
 - `figures/` – output figures
 
-## Goal
+Goal
 To evaluate whether transparent sentiment-aware indicators improve short-horizon crypto forecasting and interpretation.
