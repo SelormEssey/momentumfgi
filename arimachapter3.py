@@ -65,7 +65,7 @@ print(f"Best ARIMA order: {best_order}")
 print(f"MAE:  {mae:.2f} USD")
 print(f"RMSE: {rmse:.2f} USD")
 
-# PLOT ONLY TEST WINDOW (this fixes your confusing full-series plot)
+
 plt.figure(figsize=(10, 5))
 plt.plot(test.index, test.values, label="Actual BTC", color="steelblue")
 plt.plot(test.index, test_preds.values, label="Test Predictions", color="orange")
