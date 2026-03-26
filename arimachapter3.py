@@ -59,7 +59,7 @@ future_index = pd.date_range(start=TEST_END, periods=FUTURE_DAYS + 1, freq="D")[
 mae = mean_absolute_error(test.values, test_preds.values)
 rmse = np.sqrt(mean_squared_error(test.values, test_preds.values))
 
-print("\n📈 ARIMA (Real BTC Test Window):")
+print("\n ARIMA (Real BTC Test Window):")
 print(f"Test window: {TEST_START.date()} → {TEST_END.date()}")
 print(f"Best ARIMA order: {best_order}")
 print(f"MAE:  {mae:.2f} USD")
