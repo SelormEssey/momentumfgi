@@ -1,4 +1,3 @@
-# fig_3_3_arima_real.py
 import yfinance as yf
 import pandas as pd
 import numpy as np
@@ -16,11 +15,11 @@ FUTURE_DAYS = 15
 
 OUT_FIG = "figures/arimach3fin.png"
 
-# Load BTC close
+
 data = yf.download("BTC-USD", start=START, end=END, interval="1d")[["Close"]].dropna()
 series = data["Close"]
 
-# Shared split
+
 split_idx = int(len(series) * TRAIN_FRAC)
 train = series.iloc[:split_idx]
 test  = series.iloc[split_idx:]
@@ -28,7 +27,7 @@ test  = series.iloc[split_idx:]
 TEST_START = test.index.min()
 TEST_END   = test.index.max()
 
-# Small grid search (fast)
+
 p_values = range(0, 4)
 d_values = range(0, 2)
 q_values = range(0, 4)
@@ -48,14 +47,14 @@ for p, d, q in product(p_values, d_values, q_values):
     except:
         continue
 
-# Forecast test + future
+
 forecast_all = best_model.forecast(steps=len(test) + FUTURE_DAYS)
 test_preds = forecast_all.iloc[:len(test)]
 future_preds = forecast_all.iloc[len(test):]
 
 future_index = pd.date_range(start=TEST_END, periods=FUTURE_DAYS + 1, freq="D")[1:]
 
-# Metrics (test window only)
+
 mae = mean_absolute_error(test.values, test_preds.values)
 rmse = np.sqrt(mean_squared_error(test.values, test_preds.values))
 
