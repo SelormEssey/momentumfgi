@@ -13,7 +13,7 @@ END   = "2025-01-01"
 TRAIN_FRAC = 0.8
 FUTURE_DAYS = 15
 
-OUT_FIG = "figures/arimach3fin.png"
+OUT_FIG = "figures/arimafin.png"
 
 
 data = yf.download("BTC-USD", start=START, end=END, interval="1d")[["Close"]].dropna()

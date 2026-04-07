@@ -15,7 +15,7 @@ END   = "2025-01-01"
 TRAIN_FRAC = 0.8
 N = 60
 
-OUT_FIG = "lstmch3fin.png"
+OUT_FIG = "figures/lstmfin.png"
 
 data = yf.download("BTC-USD", start=START, end=END, interval="1d")[["Close"]].dropna()
 prices = data["Close"]

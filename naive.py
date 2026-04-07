@@ -9,7 +9,7 @@ START = "2023-01-01"
 END = "2025-01-01"
 TRAIN_FRAC = 0.8
 
-OUT_FIG = "figures/naivech3fin.png"
+OUT_FIG = "figures/naivechfin.png"
 os.makedirs("figures", exist_ok=True)
 
 data = yf.download("BTC-USD", start=START, end=END, interval="1d")[["Close"]].dropna()
