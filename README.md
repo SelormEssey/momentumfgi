@@ -1,4 +1,4 @@
-# Momentum FGI 📈
+# Momentum Fear and Greed Index 📈
 
 Momentum FGI is a fintech and machine learning project exploring how market data and sentiment can be combined to better understand and forecast short-term cryptocurrency price movements.
 
