@@ -1,39 +1,79 @@
-# momentumfgi
+# Momentum FGI 📈
 
-Momentum FGI is a cryptocurrency forecasting project that compares Naive, ARIMA, and LSTM models while incorporating sentiment-aware features into a transparent Fear and Greed Index framework.
+Momentum FGI is a fintech and machine learning project exploring how market data and sentiment can be combined to better understand and forecast short-term cryptocurrency price movements.
 
-## Project Overview
+The project compares traditional and deep learning forecasting approaches while developing a transparent **Momentum Fear & Greed Index (MFGI)** for interpreting Bitcoin market conditions.
 
-This project explores whether sentiment-aware indicators can improve short-horizon cryptocurrency forecasting and interpretation. It combines traditional forecasting models with a custom Momentum Fear and Greed Index built from price behavior and sentiment-related features.
+## 💳 Fintech Focus
 
-## Files
+Financial markets are influenced by more than price history alone. Investor sentiment, volatility, and market momentum can all contribute to short-term behavior.
 
-- `naive.py` – Naive baseline forecasting model
-- `arima.py` – ARIMA forecasting model
-- `lstm.py` – LSTM forecasting model
-- `MFGI.py` – Momentum Fear and Greed Index pipeline
-- `bitcoin_sentiments_21_24.csv` – sentiment dataset
-- `data/` – input datasets
-- `figures/` – core output figures
-- `MFGIFIGS2/` – additional generated figures, tables, and comparison outputs
+Momentum FGI explores how these signals can be combined into a transparent market indicator and used alongside forecasting models.
 
-## Goal
+The project focuses on:
 
-To evaluate whether transparent sentiment-aware indicators improve short-horizon crypto forecasting and interpretation.
+- cryptocurrency market forecasting
+- financial sentiment analysis
+- market momentum and volatility
+- quantitative time-series modeling
+- interpretable market indicators
+- AI applications in fintech
 
-## Models Used
+## 📊 Project Overview
 
-- Naive baseline
+The project evaluates several approaches to Bitcoin price forecasting:
+
+- **Naive Forecasting** — baseline for evaluating model performance
+- **ARIMA** — statistical time-series forecasting
+- **LSTM** — deep learning for sequential financial data
+- **Momentum Fear & Greed Index (MFGI)** — a custom market sentiment indicator combining price momentum, volatility, and sentiment signals
+
+The goal is to evaluate whether sentiment-aware financial indicators provide useful information for short-horizon cryptocurrency forecasting and market interpretation.
+
+## 🧠 Momentum Fear & Greed Index
+
+The MFGI is designed as a transparent alternative to black-box market sentiment indicators.
+
+It combines:
+
+- market momentum
+- price volatility
+- cryptocurrency news sentiment
+
+These signals are transformed into a 0–100 index representing market conditions ranging from **Extreme Fear** to **Extreme Greed**.
+
+## 🛠️ Models & Methods
+
+- Naive baseline forecasting
 - ARIMA
-- LSTM
-- Sentiment-enhanced forecasting through MFGI
+- Long Short-Term Memory Networks (LSTM)
+- Sentiment analysis
+- Financial time-series analysis
+- Rolling market indicators
+- Model evaluation using MAE and RMSE
 
-## Outputs
+## 📁 Repository Structure
 
-The project generates:
-- forecast comparison plots
-- sentiment preprocessing visuals
-- Fear and Greed Index charts
-- model comparison tables
-- prediction result files
+- `naive.py` — baseline financial forecasting model
+- `arima.py` — ARIMA time-series model
+- `lstm.py` — LSTM forecasting experiments
+- `MFGI.py` — Momentum Fear & Greed Index pipeline
+- `bitcoin_sentiments_21_24.csv` — cryptocurrency sentiment dataset
+- `data/` — financial and sentiment datasets
+- `figures/` — forecasting and market-analysis visualizations
+- `MFGIFIGS2/` — additional model comparisons and generated outputs
 
+## 📈 Outputs
+
+The project produces:
+
+- Bitcoin price forecasts
+- model performance comparisons
+- financial sentiment visualizations
+- Momentum Fear & Greed Index charts
+- market condition classifications
+- prediction and evaluation results
+
+## 🎯 Goal
+
+The broader goal of Momentum FGI is to explore how **AI, data science, and transparent market analytics can be applied to financial technology**, particularly in highly sentiment-driven markets such as cryptocurrency.
