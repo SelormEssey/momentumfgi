@@ -1,5 +1,7 @@
+.DS_Store
+.venv/
 venv/
 lstm_env/
 __pycache__/
-*.pyc
-.DS_Store
+*.py[cod]
+.pytest_cache/
